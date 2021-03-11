@@ -1,0 +1,19 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./CSS/main.scss:./CSS/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastertoson/P3_rakotoson_theo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mastertoson/P3_rakotoson_theo/issues"
+  },
+  "homepage": "https://github.com/mastertoson/P3_rakotoson_theo#readme"
+}

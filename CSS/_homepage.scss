@@ -1,0 +1,135 @@
+
+// header //
+#nav{
+    width: 100%;
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    box-shadow: inset 0px 9px 7px -8px rgb(0 0 0 / 25%);
+        .nav_map{
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+        }
+     }
+// header //
+
+// body //
+#head_explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background: $grey;
+    #head_title{
+        margin-bottom: 15px;
+    }
+    #head_text{
+        margin-bottom: 25px;
+    }
+    button{
+        border-radius: 50px;
+        border-style: none;
+        color: $text_white;
+        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+        width: 200px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 3px 8px rgb(0 0 0 / 25%);
+    }
+}
+
+.tuto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+
+    .tuto_title{
+        padding-bottom: 30px;
+    }
+    .tuto_card{
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        background: $grey;
+        height: 70px;
+        width: 100%;
+        margin-bottom: 10px;
+        box-shadow: 0px 3px 8px rgb(0 0 0 / 25%);
+    }
+    .tuto_number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text_white;
+        border-radius: 100px;
+        height: 20px;
+        width: 20px;
+        background: #9356dc;
+        position:relative;
+        left: -10px;
+    }
+    .tuto_icons{
+        display: flex;
+        color: gray ;
+        margin-right: 15px;
+        margin-left: 15px;
+            &-purple{
+                color: #9356dc;
+                margin-right: 15px;
+                margin-left: 15px;
+            }
+    }
+    .tuto_card_text{
+        font-weight: bold;
+        
+    }
+
+}
+.restaurant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.restaurant_card{
+    display: flex;
+
+    flex-direction: column;
+    border-radius: 20px;
+    background: white;
+    width: 90%;
+    margin-bottom: 20px;
+    box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+    color: black;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .restaurant_name{
+
+    }
+
+    .icon_card{
+
+    }
+
+    .location{
+
+    }
+
+    .new_card{
+        display: flex;
+        justify-self: flex-end;
+        position: relative;
+    }
+}
+
+// body //
