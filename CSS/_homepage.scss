@@ -48,7 +48,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 90%;
+    padding: 5%;
 
     .tuto_title{
         padding-bottom: 30px;
@@ -93,13 +93,21 @@
 
 }
 .restaurant{
+    background: $grey;
     display: flex;
     flex-direction: column;
     align-items: center;
+    .restaurant_title{
+        width: 90%;
+        padding:20px 20px 50px 20px;
+        display: flex;
+        justify-content: flex-start;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
 }
 .restaurant_card{
     display: flex;
-
     flex-direction: column;
     border-radius: 20px;
     background: white;
@@ -113,6 +121,7 @@
         height: 200px;
         border-radius: 20px 20px 0px 0px;
     }
+    
     .restaurant_name{
 
     }
@@ -127,8 +136,20 @@
 
     .new_card{
         display: flex;
-        justify-self: flex-end;
-        position: relative;
+        right: 70px;
+        position: absolute;
+    }
+
+    .restaurant_card_text{
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+        i{
+            justify-self: flex-end;
+            align-self: flex-end;
+        }
     }
 }
 

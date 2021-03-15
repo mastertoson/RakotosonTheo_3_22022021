@@ -87,7 +87,7 @@ footer li i {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 90%;
+  padding: 5%;
 }
 .tuto .tuto_title {
   padding-bottom: 30px;
@@ -130,9 +130,18 @@ footer li i {
 }
 
 .restaurant {
+  background: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.restaurant .restaurant_title {
+  width: 90%;
+  padding: 20px 20px 50px 20px;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .restaurant_card {
@@ -153,8 +162,67 @@ footer li i {
 }
 .restaurant_card .new_card {
   display: flex;
-  justify-self: flex-end;
+  right: 70px;
+  position: absolute;
+}
+.restaurant_card .restaurant_card_text {
+  padding: 1rem;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.restaurant_card .restaurant_card_text i {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+.menupage_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.menupage_header .arrow_head {
+  display: flex;
+}
+.menupage_header .menupage_logo {
+  display: flex;
+}
+
+.menupage_background img {
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menupage_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+  border-radius: 30px 30px 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+}
+.menupage_menu .menupage_title {
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menupage_menu .menupage_card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background: white;
+  width: 90%;
+  margin-bottom: 20px;
+  box-shadow: 2px 1px 5px 2px #d1d1d1;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
