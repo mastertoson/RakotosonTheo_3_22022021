@@ -36,23 +36,39 @@
     background-color: #f6f6f6;
     z-index: 1;
     position: relative;
-    .menupage_title{
-    padding: 20px 20px 20px 20px;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
+    width: 100%;
+    .menu{
+        width: 90%;
+        .menupage_title{
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
 
-    }
-    .menupage_card{
+        }
+        .menupage_card{
         display: flex;
         flex-direction: column;
         border-radius: 20px;
         background: white;
-        width: 90%;
+        width: 100%;
         margin-bottom: 20px;
         box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
         color: black;
+        padding: 10px;
+        
+            .menupage_card_title{
+                font-weight: bold;
+            }
+            .menupage_card_text{
+                
+            }
+            .menupage_card_price{
+                font-weight: bold;
+            }
+        }
     }
+    
 }
 
 // body //

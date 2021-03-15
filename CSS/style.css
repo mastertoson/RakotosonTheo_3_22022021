@@ -170,7 +170,7 @@ footer li i {
   justify-content: center;
   position: absolute;
   right: 6%;
-  bottom: 10px;
+  bottom: 15px;
   font-size: 30px;
 }
 .restaurant_card .new_card {
@@ -221,22 +221,33 @@ footer li i {
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
+  width: 100%;
 }
-.menupage_menu .menupage_title {
+.menupage_menu .menu {
+  width: 90%;
+}
+.menupage_menu .menu .menupage_title {
   padding: 20px 20px 20px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.menupage_menu .menupage_card {
+.menupage_menu .menu .menupage_card {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   background: white;
-  width: 90%;
+  width: 100%;
   margin-bottom: 20px;
   box-shadow: 2px 1px 5px 2px #d1d1d1;
   color: black;
+  padding: 10px;
+}
+.menupage_menu .menu .menupage_card .menupage_card_title {
+  font-weight: bold;
+}
+.menupage_menu .menu .menupage_card .menupage_card_price {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
