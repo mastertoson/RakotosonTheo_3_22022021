@@ -123,11 +123,17 @@
     }
     
     .restaurant_name{
-
+        font-weight: bold;
     }
 
     .icon_card{
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 6%;
+        bottom: 10px;
+        font-size: 30px;
     }
 
     .location{
@@ -135,21 +141,22 @@
     }
 
     .new_card{
-        display: flex;
-        right: 70px;
+        background-color: #99e2d0;
+        color: #1b6150;
+        padding: .5rem;
+        border-radius: .125rem;
         position: absolute;
+        margin-top:10px ;
+        right: 7%;
     }
 
     .restaurant_card_text{
     padding: 1rem;
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-        i{
-            justify-self: flex-end;
-            align-self: flex-end;
-        }
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
     }
 }
 
