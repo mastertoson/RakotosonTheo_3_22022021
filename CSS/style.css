@@ -167,14 +167,35 @@ footer li i {
 .restaurant_card .restaurant_name {
   font-weight: bold;
 }
-.restaurant_card .icon_card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
+.restaurant_card .restaurant_card_icon {
   right: 6%;
   bottom: 15px;
   font-size: 30px;
+  position: absolute;
+}
+.restaurant_card .restaurant_card_icon .icon_card_full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(top, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial;
+  opacity: 0;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 330ms;
+}
+.restaurant_card .restaurant_card_icon .check_homepage:checked + .icon_card_full {
+  opacity: 1;
+}
+.restaurant_card .restaurant_card_icon .icon_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 500;
 }
 .restaurant_card .new_card {
   background-color: #99e2d0;
@@ -243,6 +264,46 @@ footer li i {
 .menupage_menu .menu {
   width: 90%;
 }
+.menupage_menu .menu .delay_1 {
+  animation: appear 600ms;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+}
+.menupage_menu .menu .delay_2 {
+  animation: appear 700ms;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+}
+.menupage_menu .menu .delay_3 {
+  animation: appear 800ms;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+}
+.menupage_menu .menu .delay_4 {
+  animation: appear 900ms;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+}
+.menupage_menu .menu .delay_5 {
+  animation: appear 1000ms;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+}
+.menupage_menu .menu .delay_6 {
+  animation: appear 1100ms;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+}
+.menupage_menu .menu .delay_7 {
+  animation: appear 1200ms;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+}
+.menupage_menu .menu .delay_8 {
+  animation: appear 1300ms;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+}
+.menupage_menu .menu .delay_9 {
+  animation: appear 1400ms;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+}
+.menupage_menu .menu .delay_10 {
+  animation: appear 1500ms;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+}
 .menupage_menu .menu .menupage_card {
   display: flex;
   justify-content: space-between;
@@ -280,6 +341,49 @@ footer li i {
   justify-content: center;
   align-items: center;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+input {
+  display: none;
+}
+
+.menupage_heart_icon {
+  right: 6%;
+  bottom: 15px;
+  font-size: 30px;
+}
+.menupage_heart_icon .icon_menupage_full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(top, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial;
+  opacity: 0;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 330ms;
+}
+.menupage_heart_icon .check_menupage:checked + .icon_menupage_full {
+  opacity: 1;
+}
+.menupage_heart_icon .icon_menupage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
