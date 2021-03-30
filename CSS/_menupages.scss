@@ -22,7 +22,6 @@
         object-fit: cover;
     }
 }
-
 .menupage_menu {
     display: flex;
     flex-direction: column;
@@ -92,20 +91,66 @@
         }
         .menupage_card {
             display: flex;
-            justify-content: space-between;
             border-radius: 20px;
             background: white;
             max-width: 100%;
             margin-bottom: 20px;
             box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+            height: 70px;
             color: black;
-            padding: 10px;
             cursor: pointer;
-            
-            .menupage_card_title {
-                font-weight: bold;
+            overflow:hidden;
+            .menupage_card_text {
+                margin:  10px auto 10px 10px;
+                display: flex;
+                overflow:hidden;
+                flex-direction: column;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                .menupage_card_title {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-weight: 900;
+                }
+                p{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-weight: 400;
+                }
             }
-            .menupage_card_price {
+            &:hover .menupage_card_price{
+                animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            &:hover .checkdiv {
+                animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                .check{
+                    animation: rotate-center 0.5s ease-in-out both;
+                }
+            }
+            .check_container{
+                margin: -0px -70px -0px -0px;
+                height: 100%;
+                width: 70px;
+                min-width: 70px;
+                .checkdiv{
+                    height: 100%;
+                    border-radius: 0 20px 20px 0;
+                    background-color: #99e2d0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .check{
+                        color: white;  
+                        font-size: 25px;
+                    }
+                }
+            }
+            .menupage_card_price{
+                height: 100%;
+                padding-top: 40px;
+                margin: 0px 20px 0px 40px;
                 font-weight: bold;
             }
         }
@@ -130,16 +175,13 @@
         box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
     }
 }
-
 input {
     display: none;
 }
-
 .menupage_heart_icon {
     right: 6%;
     bottom: 15px;
     font-size: 30px;
-
     .icon_menupage_full {
         display: flex;
         align-items: center;
@@ -165,6 +207,4 @@ input {
         font-weight: 500;
     }
 }
-
-
 // body //
