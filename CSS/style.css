@@ -242,6 +242,55 @@ footer li i {
   flex-direction: column;
 }
 
+@media screen and (min-width: 1440px) {
+  .tuto {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .tuto .tuto_title {
+    width: 100%;
+  }
+  .tuto .tuto_card {
+    width: 30%;
+  }
+
+  .restaurant {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.4fr 1.4fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . . . " "r1 r1 r2 r2" "r3 r3 r4 r4" ". . . .";
+  }
+  .restaurant .restaurant_card {
+    position: relative;
+  }
+  .restaurant .restaurant_card .new_card {
+    margin-top: 20px;
+    right: 5%;
+  }
+
+  .r1 {
+    grid-area: r1;
+    justify-self: center;
+  }
+
+  .r2 {
+    grid-area: r2;
+    justify-self: center;
+  }
+
+  .r3 {
+    grid-area: r3;
+    justify-self: center;
+  }
+
+  .r4 {
+    grid-area: r4;
+    justify-self: center;
+  }
+}
 .menupage_header {
   text-align: center;
   width: 100%;
@@ -279,6 +328,10 @@ footer li i {
   align-items: center;
   justify-content: space-between;
   width: 90%;
+}
+.menupage_menu .menupage_title_text {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
 }
 .menupage_menu .line_under_title {
   display: flex;
@@ -451,6 +504,31 @@ input {
   font-weight: 500;
 }
 
+@media screen and (min-width: 1440px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 0.1fr 2fr 0.1fr 2fr 0.1fr 2fr 0.1fr;
+    grid-template-rows: 1.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas: ". e . p . d ." "c c c c c c c";
+  }
+
+  .c {
+    grid-area: c;
+  }
+
+  .e {
+    grid-area: e;
+  }
+
+  .p {
+    grid-area: p;
+  }
+
+  .d {
+    grid-area: d;
+  }
+}
 @keyframes appear {
   0% {
     transform: scale(0);

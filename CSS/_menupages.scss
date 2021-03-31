@@ -39,6 +39,10 @@
         justify-content: space-between;
         width: 90%;
     }
+    .menupage_title_text{
+        font-family: "Shrikhand", cursive;
+        font-weight: 500;
+    }
     .line_under_title {
         display: flex;
         align-items: center;
@@ -208,3 +212,28 @@ input {
     }
 }
 // body //
+
+// responsive desktop //
+@media screen and (min-width: 1440px){
+    .menu {
+        display: grid;
+        grid-template-columns: 0.1fr 2fr 0.1fr 2fr 0.1fr 2fr 0.1fr;
+        grid-template-rows: 1.8fr 0.2fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          ". e . p . d ."
+          "c c c c c c c";
+      }
+      
+      .c { grid-area: c; }
+      
+      .e { grid-area: e; }
+      
+      .p { grid-area: p; }
+      
+      .d { grid-area: d; }
+      
+      
+
+}
+// responsive desktop //
