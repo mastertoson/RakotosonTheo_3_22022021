@@ -113,6 +113,10 @@ footer li i {
   align-items: center;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
 }
+#head_explore .head_button {
+  outline: none;
+  cursor: pointer;
+}
 
 .tuto {
   display: flex;
@@ -213,8 +217,9 @@ footer li i {
   font-size: 30px;
   font-weight: bold;
   transition: 330ms;
+  cursor: pointer;
 }
-.restaurant_card .restaurant_card_icon .check_homepage:checked + .icon_card_full {
+.restaurant_card .restaurant_card_icon .icon_card_full:hover {
   opacity: 1;
 }
 .restaurant_card .restaurant_card_icon .icon_card {
@@ -468,6 +473,8 @@ footer li i {
   justify-content: center;
   align-items: center;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  outline: none;
+  cursor: pointer;
 }
 
 input {
@@ -478,6 +485,7 @@ input {
   right: 6%;
   bottom: 15px;
   font-size: 30px;
+  cursor: pointer;
 }
 .menupage_heart_icon .icon_menupage_full {
   display: flex;

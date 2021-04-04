@@ -177,6 +177,8 @@
         justify-content: center;
         align-items: center;
         box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+        outline: none;
+        cursor: pointer;
     }
 }
 input {
@@ -186,6 +188,7 @@ input {
     right: 6%;
     bottom: 15px;
     font-size: 30px;
+    cursor: pointer;
     .icon_menupage_full {
         display: flex;
         align-items: center;
