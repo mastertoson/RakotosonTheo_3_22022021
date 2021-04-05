@@ -179,6 +179,10 @@
         box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
         outline: none;
         cursor: pointer;
+        transition: 100ms cubic-bezier(.5,1.58,.34,.82);
+        &:hover{
+            transform:scale(1.1); 
+        }
     }
 }
 input {
