@@ -9,7 +9,7 @@
       
 }
 // loader // 
-  @keyframes test{
+  @keyframes opaque{
     0% {
       opacity: 80%;
       transform: scale(1)
@@ -19,7 +19,7 @@
     transform: scale(0);
     }
   }
-  @keyframes test1{
+  @keyframes rotate_icon{
     0% {
       transform: scale(1);
     }

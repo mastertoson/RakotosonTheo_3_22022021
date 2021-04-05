@@ -26,8 +26,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: test 1s cubic-bezier(0.39, 0.575, 0.565, 1) both 3000ms,
-        test1 0s cubic-bezier(0.39, 0.575, 0.565, 1) both 4000ms;
+    animation: opaque 1s cubic-bezier(0.39, 0.575, 0.565, 1) both 3000ms,
+    rotate_icon 0s cubic-bezier(0.39, 0.575, 0.565, 1) both 4000ms;
     }
     .burger {
         display: flex;
