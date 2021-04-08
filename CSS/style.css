@@ -418,21 +418,24 @@ footer li i {
 }
 .menupage_menu .menu .menupage_card .menupage_card_text {
   margin: 10px auto 10px 10px;
+  max-width: 300px;
   display: flex;
   overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  text-overflow: ellipsis;
 }
 .menupage_menu .menu .menupage_card .menupage_card_text .menupage_card_title {
   white-space: nowrap;
   text-overflow: ellipsis;
   font-weight: 900;
+  overflow: hidden;
 }
 .menupage_menu .menu .menupage_card .menupage_card_text p {
   white-space: nowrap;
   text-overflow: ellipsis;
   font-weight: 400;
+  overflow: hidden;
 }
 .menupage_menu .menu .menupage_card:hover .menupage_card_price {
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
