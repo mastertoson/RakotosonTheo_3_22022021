@@ -104,6 +104,7 @@
             color: black;
             cursor: pointer;
             overflow:hidden;
+            
             .menupage_card_text {
                 margin:  10px auto 10px 10px;
                 display: flex;
@@ -114,13 +115,11 @@
                 .menupage_card_title {
                     white-space: nowrap;
                     text-overflow: ellipsis;
-                    overflow: hidden;
                     font-weight: 900;
                 }
                 p{
                     white-space: nowrap;
                     text-overflow: ellipsis;
-                    overflow: hidden;
                     font-weight: 400;
                 }
             }
@@ -156,6 +155,7 @@
                 padding-top: 40px;
                 margin: 0px 20px 0px 40px;
                 font-weight: bold;
+                
             }
         }
     }
@@ -171,6 +171,7 @@
         border-style: none;
         color: $text_white;
         background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+        background-color:rgb(104,104,104);
         width: 200px;
         height: 40px;
         display: flex;
@@ -181,7 +182,9 @@
         cursor: pointer;
         transition: 100ms cubic-bezier(.5,1.58,.34,.82);
         &:hover{
-            transform:scale(1.1); 
+            transform:scale(1); 
+            box-shadow: 2px 4px 9px rgb(0 0 0 / 50%);
+            background-color: white;
         }
     }
 }
@@ -209,6 +212,7 @@ input {
     }
     .check_menupage:checked + .icon_menupage_full {
         opacity: 1;
+        animation:cubic-bezier(.32,.33,.7,.69) appear 300ms;
     }
     .icon_menupage {
         display: flex;

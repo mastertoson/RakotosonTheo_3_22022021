@@ -60,6 +60,7 @@
         border-style: none;
         color: $text_white;
         background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+        background-color:rgb(104,104,104);
         width: 200px;
         height: 40px;
         display: flex;
@@ -68,13 +69,14 @@
         box-shadow: 0px 3px 8px rgb(0 0 0 / 25%);
         transition: 100ms cubic-bezier(.5,1.58,.34,.82);
         &:hover{
-            transform:scale(1.1); 
+            transform:scale(1); 
+            box-shadow: 2px 4px 9px rgb(0 0 0 / 50%);
+            background-color: white;
         }
     }
     .head_button{
         outline: none;
         cursor: pointer;
-        
     }
 }
 .tuto {
@@ -94,6 +96,14 @@
         width: 100%;
         margin-bottom: 10px;
         box-shadow: 0px 3px 8px rgb(0 0 0 / 25%);
+        transition-duration: 250ms;
+        &:hover{
+            background-color: #f5edff;
+            box-shadow: 0px 4px 9px rgb(0 0 0 / 30%);
+            .tuto_icons{
+                color: #9356dc;
+            }
+        }
     }
     .tuto_number {
         display: flex;
@@ -112,11 +122,6 @@
         color: gray;
         margin-right: 15px;
         margin-left: 15px;
-        &-purple {
-            color: #9356dc;
-            margin-right: 15px;
-            margin-left: 15px;
-        }
     }
     .tuto_card_text {
         font-weight: bold;
@@ -151,7 +156,6 @@
         height: 200px;
         border-radius: 20px 20px 0px 0px;
     }
-
     .restaurant_name {
         font-weight: bold;
     }
@@ -175,7 +179,8 @@
             transition: 330ms;
             cursor: pointer;
                 &:hover{
-                    opacity: 1;
+                     opacity: 1;
+                    animation:cubic-bezier(.32,.33,.7,.69) appear 300ms;
                 }
             
         }
@@ -185,7 +190,6 @@
             justify-content: center;
             font-size: 30px;
             font-weight: 500;
-            
         } 
     }
     .new_card {

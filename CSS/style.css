@@ -42,6 +42,9 @@ footer li {
   margin-bottom: 10px;
   cursor: pointer;
 }
+footer li a {
+  color: #fff;
+}
 footer li i {
   margin-right: 10px;
 }
@@ -107,6 +110,7 @@ footer li i {
   border-style: none;
   color: #fff;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-color: #686868;
   width: 200px;
   height: 40px;
   display: flex;
@@ -116,7 +120,9 @@ footer li i {
   transition: 100ms cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 #head_explore button:hover {
-  transform: scale(1.1);
+  transform: scale(1);
+  box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.5);
+  background-color: white;
 }
 #head_explore .head_button {
   outline: none;
@@ -141,6 +147,14 @@ footer li i {
   width: 100%;
   margin-bottom: 10px;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+  transition-duration: 250ms;
+}
+.tuto .tuto_card:hover {
+  background-color: #f5edff;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+}
+.tuto .tuto_card:hover .tuto_icons {
+  color: #9356dc;
 }
 .tuto .tuto_number {
   display: flex;
@@ -157,11 +171,6 @@ footer li i {
 .tuto .tuto_icons {
   display: flex;
   color: gray;
-  margin-right: 15px;
-  margin-left: 15px;
-}
-.tuto .tuto_icons-purple {
-  color: #9356dc;
   margin-right: 15px;
   margin-left: 15px;
 }
@@ -226,6 +235,7 @@ footer li i {
 }
 .restaurant_card .restaurant_card_icon .icon_card_full:hover {
   opacity: 1;
+  animation: cubic-bezier(0.32, 0.33, 0.7, 0.69) appear 300ms;
 }
 .restaurant_card .restaurant_card_icon .icon_card {
   display: flex;
@@ -417,13 +427,11 @@ footer li i {
 .menupage_menu .menu .menupage_card .menupage_card_text .menupage_card_title {
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
   font-weight: 900;
 }
 .menupage_menu .menu .menupage_card .menupage_card_text p {
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
   font-weight: 400;
 }
 .menupage_menu .menu .menupage_card:hover .menupage_card_price {
@@ -472,6 +480,7 @@ footer li i {
   border-style: none;
   color: #fff;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-color: #686868;
   width: 200px;
   height: 40px;
   display: flex;
@@ -483,7 +492,9 @@ footer li i {
   transition: 100ms cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menupage_commande .menupage_commande_button:hover {
-  transform: scale(1.1);
+  transform: scale(1);
+  box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.5);
+  background-color: white;
 }
 
 input {
@@ -512,6 +523,7 @@ input {
 }
 .menupage_heart_icon .check_menupage:checked + .icon_menupage_full {
   opacity: 1;
+  animation: cubic-bezier(0.32, 0.33, 0.7, 0.69) appear 300ms;
 }
 .menupage_heart_icon .icon_menupage {
   display: flex;
@@ -548,7 +560,7 @@ input {
 }
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: scale(0.4);
   }
   100% {
     transform: scale(1);

@@ -1,8 +1,11 @@
 // animation heart //
 @keyframes appear{
-    0% {
-        transform: scale(0);
-      }
+    // 0% {
+    //     transform: scale(0);
+    //   }
+    0%{
+      transform: scale(0.4);
+    }
     100% {
         transform: scale(1);
       }
