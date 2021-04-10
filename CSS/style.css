@@ -74,7 +74,7 @@ footer li i {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: opaque 1s cubic-bezier(0.39, 0.575, 0.565, 1) both 3000ms, rotate_icon 0s cubic-bezier(0.39, 0.575, 0.565, 1) both 4000ms;
+  animation: opaque 1s cubic-bezier(0.39, 0.575, 0.565, 1) both 3000ms, disappear 0s cubic-bezier(0.39, 0.575, 0.565, 1) both 4000ms;
 }
 
 .burger {
@@ -88,7 +88,7 @@ footer li i {
   background: -webkit-linear-gradient(top, #9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: rotate-vert-center 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 8 both;
+  animation: rotate_icon 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 8 both;
 }
 
 #head_explore {
@@ -588,7 +588,7 @@ input {
     transform: scale(0);
   }
 }
-@keyframes rotate_icon {
+@keyframes disappear {
   0% {
     transform: scale(1);
   }
@@ -596,7 +596,7 @@ input {
     transform: scale(0);
   }
 }
-@keyframes rotate-vert-center {
+@keyframes rotate_icon {
   0% {
     transform: rotateY(0);
   }

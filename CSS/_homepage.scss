@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: center;
     animation: opaque 1s cubic-bezier(0.39, 0.575, 0.565, 1) both 3000ms,
-    rotate_icon 0s cubic-bezier(0.39, 0.575, 0.565, 1) both 4000ms;
+    disappear 0s cubic-bezier(0.39, 0.575, 0.565, 1) both 4000ms;
     }
     .burger {
         display: flex;
@@ -40,7 +40,7 @@
         background: -webkit-linear-gradient(top, rgba(147, 86, 220), rgba(255, 121, 218));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: rotate-vert-center 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 8 both;
+        animation: rotate_icon 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 8 both;
     }
 #head_explore {
     display: flex;
