@@ -53,6 +53,7 @@
     }
     .menu {
         width: 90%;
+        max-width: 90%;
         .delay_1{
             animation: appear 600ms;
             animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
@@ -95,27 +96,29 @@
         }
         .menupage_card {
             display: flex;
+            justify-content: space-between;
             border-radius: 20px;
             background: white;
             max-width: 100%;
             margin-bottom: 20px;
             box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
-            height: 70px;
+            height: 60px;
             color: black;
             cursor: pointer;
             overflow:hidden;
-            
+            padding:10px;
             .menupage_card_text {
                 margin:  10px auto 10px 10px;
-                max-width: 300px;
+                max-width: 100%;
                 display: flex;
                 overflow:hidden;
                 flex-direction: column;
                 justify-content: space-between;
                 text-overflow: ellipsis;
+                white-space: nowrap;
                 .menupage_card_title {
                     white-space: nowrap;
-                    text-overflow: ellipsis;
+                    text-overflow: hidden;
                     font-weight: 900;
                     overflow:hidden
                 }
@@ -126,20 +129,20 @@
                     overflow:hidden
                 }
             }
-            &:hover .menupage_card_price{
-                animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            }
-            &:hover .checkdiv {
-                animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            &:hover .check_container {
+                margin-right: -15px;
                 .check{
                     animation: rotate-center 0.5s ease-in-out both;
                 }
             }
             .check_container{
-                margin: -0px -70px -0px -0px;
-                height: 100%;
-                width: 70px;
-                min-width: 70px;
+                background-color: #99e2d0;
+                margin:-1rem -6rem -1rem 1rem;
+                width: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition-duration: 500ms;
                 .checkdiv{
                     height: 100%;
                     border-radius: 0 20px 20px 0;
@@ -154,11 +157,11 @@
                 }
             }
             .menupage_card_price{
-                height: 100%;
-                padding-top: 40px;
-                margin: 0px 20px 0px 40px;
-                font-weight: bold;
-                
+                font-weight: 700;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding-bottom: 10px;
             }
         }
     }
@@ -231,12 +234,12 @@ input {
 @media screen and (min-width: 1440px){
     .menu {
         display: grid;
-        grid-template-columns: 0.1fr 2fr 0.1fr 2fr 0.1fr 2fr 0.1fr;
+        grid-template-columns:  2fr  2fr  2fr ;
         grid-template-rows: 1.8fr 0.2fr;
-        gap: 0px 0px;
+        gap: 0px 20px;
         grid-template-areas:
-          ". e . p . d ."
-          "c c c c c c c";
+          " e  p  d "
+          " c  c  c ";
       }
       
       .c { grid-area: c; }
@@ -246,8 +249,11 @@ input {
       .p { grid-area: p; }
       
       .d { grid-area: d; }
-      
-      
+
+    .menupage_card{
+        width: 415px;
+        
+    }
 
 }
 // responsive desktop //

@@ -363,6 +363,7 @@ footer li i {
 }
 .menupage_menu .menu {
   width: 90%;
+  max-width: 90%;
 }
 .menupage_menu .menu .delay_1 {
   animation: appear 600ms;
@@ -406,28 +407,31 @@ footer li i {
 }
 .menupage_menu .menu .menupage_card {
   display: flex;
+  justify-content: space-between;
   border-radius: 20px;
   background: white;
   max-width: 100%;
   margin-bottom: 20px;
   box-shadow: 2px 1px 5px 2px #d1d1d1;
-  height: 70px;
+  height: 60px;
   color: black;
   cursor: pointer;
   overflow: hidden;
+  padding: 10px;
 }
 .menupage_menu .menu .menupage_card .menupage_card_text {
   margin: 10px auto 10px 10px;
-  max-width: 300px;
+  max-width: 100%;
   display: flex;
   overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menupage_menu .menu .menupage_card .menupage_card_text .menupage_card_title {
   white-space: nowrap;
-  text-overflow: ellipsis;
+  text-overflow: hidden;
   font-weight: 900;
   overflow: hidden;
 }
@@ -437,20 +441,20 @@ footer li i {
   font-weight: 400;
   overflow: hidden;
 }
-.menupage_menu .menu .menupage_card:hover .menupage_card_price {
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.menupage_menu .menu .menupage_card:hover .check_container {
+  margin-right: -15px;
 }
-.menupage_menu .menu .menupage_card:hover .checkdiv {
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-.menupage_menu .menu .menupage_card:hover .checkdiv .check {
+.menupage_menu .menu .menupage_card:hover .check_container .check {
   animation: rotate-center 0.5s ease-in-out both;
 }
 .menupage_menu .menu .menupage_card .check_container {
-  margin: 0px -70px 0px 0px;
-  height: 100%;
-  width: 70px;
-  min-width: 70px;
+  background-color: #99e2d0;
+  margin: -1rem -6rem -1rem 1rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 500ms;
 }
 .menupage_menu .menu .menupage_card .check_container .checkdiv {
   height: 100%;
@@ -465,10 +469,11 @@ footer li i {
   font-size: 25px;
 }
 .menupage_menu .menu .menupage_card .menupage_card_price {
-  height: 100%;
-  padding-top: 40px;
-  margin: 0px 20px 0px 40px;
-  font-weight: bold;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 10px;
 }
 
 .menupage_commande {
@@ -539,10 +544,10 @@ input {
 @media screen and (min-width: 1440px) {
   .menu {
     display: grid;
-    grid-template-columns: 0.1fr 2fr 0.1fr 2fr 0.1fr 2fr 0.1fr;
+    grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1.8fr 0.2fr;
-    gap: 0px 0px;
-    grid-template-areas: ". e . p . d ." "c c c c c c c";
+    gap: 0px 20px;
+    grid-template-areas: " e  p  d " " c  c  c ";
   }
 
   .c {
@@ -559,6 +564,10 @@ input {
 
   .d {
     grid-area: d;
+  }
+
+  .menupage_card {
+    width: 415px;
   }
 }
 @keyframes appear {
@@ -601,14 +610,6 @@ input {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-69px);
   }
 }
 
