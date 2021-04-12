@@ -366,43 +366,43 @@ footer li i {
   max-width: 90%;
 }
 .menupage_menu .menu .delay_1 {
-  animation: appear 600ms;
+  animation: appear_menu 600ms;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menupage_menu .menu .delay_2 {
-  animation: appear 700ms;
+  animation: appear_menu 700ms;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menupage_menu .menu .delay_3 {
-  animation: appear 800ms;
+  animation: appear_menu 800ms;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menupage_menu .menu .delay_4 {
-  animation: appear 900ms;
+  animation: appear_menu 900ms;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menupage_menu .menu .delay_5 {
-  animation: appear 1000ms;
+  animation: appear_menu 1000ms;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menupage_menu .menu .delay_6 {
-  animation: appear 1100ms;
+  animation: appear_menu 1100ms;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menupage_menu .menu .delay_7 {
-  animation: appear 1200ms;
+  animation: appear_menu 1200ms;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menupage_menu .menu .delay_8 {
-  animation: appear 1300ms;
+  animation: appear_menu 1300ms;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menupage_menu .menu .delay_9 {
-  animation: appear 1400ms;
+  animation: appear_menu 1400ms;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menupage_menu .menu .delay_10 {
-  animation: appear 1500ms;
+  animation: appear_menu 1500ms;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menupage_menu .menu .menupage_card {
@@ -578,14 +578,20 @@ input {
     transform: scale(1);
   }
 }
+@keyframes appear_menu {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes opaque {
   0% {
     opacity: 80%;
-    transform: scale(1);
   }
   100% {
     opacity: 0%;
-    transform: scale(0);
   }
 }
 @keyframes disappear {
